@@ -1,0 +1,20 @@
+class Solution {
+public:
+    int reverse(int n) {
+        
+        int digit,ans=0;
+        for(int i=0;n!=0;i++){
+            digit = n%10;
+            if((ans>INT_MAX/10)||(ans<INT_MIN/10)){
+                return 0;
+            }
+            ans = (ans*10) + digit;
+            n=n/10;
+            
+        }
+        if (sizeof(ans)>4)
+        return 0;
+        else
+        return ans;
+    }
+};
