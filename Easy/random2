@@ -1,5 +1,4 @@
-
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -7,4 +6,3 @@ int main(){
 
 return 0;
 }
- Random 2 - backup but will cover up
