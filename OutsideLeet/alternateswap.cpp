@@ -8,7 +8,7 @@ void alternateswap(int arr[],int size){
 
     for(int i=0;i<size;i+=2){
 
-        int temp=0;
+        // int temp=0;
         first=i;
         second=i+1;
 
@@ -23,12 +23,14 @@ void alternateswap(int arr[],int size){
         // cout<<"first1 "<<arr[first]<<endl;
         // cout<<"second1 "<<arr[second]<<endl;
 
-        temp=arr[first];
-        arr[first]=arr[second];
-        arr[second]=temp;
+        // temp=arr[first];
+        // arr[first]=arr[second];
+        // arr[second]=temp;
 
         // cout<<"first2 "<<arr[first]<<endl;
         // cout<<"second2 "<<arr[second]<<endl;
+
+        swap(arr[first],arr[second]);
         
 
     }
@@ -43,20 +45,20 @@ void alternateswap(int arr[],int size){
 
 int main(){
 
-    int arr[5];
+    int arr[6];
 
     cout<<"Enter the array elements\n";
 
-    for(int i=0;i<5;i++){
+    for(int i=0;i<6;i++){
 
         cin>>arr[i];
     }
 
-    alternateswap(arr,5);
+    alternateswap(arr,6);
 
     cout<<"Alternate swaped array:\n";
 
-    for(int i=0;i<5;i++){
+    for(int i=0;i<6;i++){
 
         cout<<arr[i]<<" ";
     }
